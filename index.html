@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            list-style: none;
+        }
+    </style>
+    </head>
+    <h1>"登录页面"</h1><br>
+    <!-- div标签独占一行 -->
+    <!--  -->
+    <div>密码一输</div>
+    <hr>
+    <body> 
+        <ul>
+         <form action="">
+            <!-- inupt标签的各个属性运用 ，用type输入属性-->
+             <!-- 属性value=""表示向后端输入用户任意输入的内容,name属性向后端解释输入信息的具体含义 -->
+            <li>昵称：<input type="text" placeholder="请输入你的昵称" value="" name="nickname" title="请不要输入特殊字符，有可能会造成读取困难"></li>
+            <li>密码：<input type="password" placeholder="请输入你的密码" value="" name="password"></li>                            
+            <!-- 日期专用属性值：date -->
+            <li>生日：<input type="date" title="年/月/日"></li>
+            <li>
+                <!-- label标签使得勾选文字也有选中功能 -->
+                性别：<label>
+                     <!-- radio单选属性 ，name属性为单选框分组使其具有单选功能，-->
+                        <!-- name属性为单选框分组使其具有单选功能 ，只.有都是1组的才能进行单选 ，且一组lapel只能套一个选项-->
+                         <input type="radio" name="1" checked>男
+                          <!-- 在radio与checkbox(多选属性) 后加checked可以确定默认选项-->
+                        </label>
+                        <!-- 目前在不了解for下，要删除lapel后默认的for属性才能使用 -->
+                        <label >
+                         <input type="radio" name="1" >女
+                        </label>
+                        <label >
+                         <input type="radio" name="1">不确定
+                         </label>
+            </li>
+            <li>
+                爱好：<label>                     
+                         <!-- 一组lapel只能套一个选项-->
+                       <input type="checkbox"  checked>游泳
+                        </label>
+                        <!-- 目前在不了解for下，要删除lapel后默认的for属性才能使用 -->
+                        <label >
+                         <input type="checkbox" checked>打lol
+                        </label>
+                        <label >
+                         <input type="checkbox">写代码
+                         </label>
+            </li>
+            <!-- 提交文件属性值：file -->
+            <li>
+                <!-- multiple属性用于提交多个文件 -->
+                <input type="file" multiple >
+            </li>
+            <li>
+                <!-- 按钮标签：button -->
+                 <!-- 重置属性值：reset -->
+                <button type="reset">重置</button>
+                 <!-- 提交属性值：submit -->
+                <button type="submit">提交</button>
+                 <!-- 普通按钮属性值：button()要配合后面内容赋予意义-->
+                 <button type="button">注册新用户</button>
+                 <!-- 菜单属性值 ：menu，暂时不知含义-->
+                <button type="menu">菜单</button>
+            </li>
+            <li> 
+             <!--下拉选框标签：select  -->
+             <!-- 必须用option来写具体的某一项事物 -->
+             你喜欢的类型：
+             <select name="" id="">
+                 <!-- selected属性来确定默认选项 -->
+                 <option value="" selected>1型</option>
+                 <option value="">2型</option>
+                 <option value="" >3型</option>
+                 <option value="">4型</option>
+                 <option value="">5型</option>
+             </select>
+            </li>  
+             <!-- 文本域标签：textarea -->  
+            <!-- 暂时用cols,rows设置宽度，行数 ，name与id暂时未知-->
+            <textarea name="" id="" cols="30" rows="10" placeholder="请输入十个你喜欢明星的名字"></textarea>
+        </ul>
+    </form>
+        <dl>
+            <dt><strong>视频专区</strong></dt>
+            <dd><a href="./视频/2c7a04ab249ed2d9efab11b234569316.mp4">1类</a></dd>
+            <dd><a href="./视频/2c7a04ab249ed2d9efab11b234569316.mp4">2类</a></dd>    
+            <dd><a href="./视频/2c7a04ab249ed2d9efab11b234569316.mp4">3类</a></dd>
+            <dd><a href="./视频/2c7a04ab249ed2d9efab11b234569316.mp4">4类</a></dd>
+            <dd><a href="./视频/2c7a04ab249ed2d9efab11b234569316.mp4">5类</a></dd>
+            <dd><a href="./视频/2c7a04ab249ed2d9efab11b234569316.mp4">6类</a></dd>     
+            <dd><a href="./1/屏幕截图 2021-08-29 153833.png">风景图</a></dd>
+        </dl>
+        <hr>
+        <ol>
+          <h3>震撼事件排行榜</h3>  
+          <li>教室</li>
+          <li>关门</li>
+          <li>洗澡</li>
+        </ol>
+        <a href="#">返回顶部</a>
+    </body>
+    </html>
